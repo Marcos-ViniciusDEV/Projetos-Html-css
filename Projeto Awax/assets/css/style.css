@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+
+.bottom{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b28756;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    background-color: black;
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+}
+
+.menu ul {
+    display: flex;;
+    list-style: none;
+}
+
+.menu ul li a {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;  
+    font-weight: 600; 
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid transparent;
+}
+
+.menu ul li a:hover ,#active a  {
+    border-bottom: 5px solid #b28756;
+}
+    
+
+main .banner {
+    background-color: #333;
+    height: calc(100vh - 100px);
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position:bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    margin-left: 0vw; /* Usado para fazer a movimentação dos slides */
+    width: 1000vw;
+    height: 100%;
+    display: flex;
+}
+
+.banner .sliders .slide1 , .slide2 , .slide3 {
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}   
+
+.slidearea {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.banner .sliders .slide1 .slidearea h1 , .slide2 .slidearea h1 , .slide3 .slidearea h1 {
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b28756;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* .banner .sliders .slide2   {
+    font-size: 50px;
+    color: white;
+    background-color: red;
+}
+.banner .sliders .slide3   {
+    font-size: 50px;
+    color: white;
+    background-color: blue;
+} */
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .sliders-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #b28756;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+
+}
+
+.banner .sliders-pointers .pointer.active {
+    background-color: #b28756;
+}
+
+.default {
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+}
+
+.default .section_title,
+.default .section_desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.default .section_title{
+    color: black;
+    font-size: 25px;
+}
+
+.default .section_desc{
+    /* margin-bottom: 40px; */
+    margin-top: 10px;
+    font-size: 10px;
+    color:#ccc
+
+}
+
+.default .section_body{
+    margin: auto;
+    max-width: 1140px;
+    min-height: 100px;
+}
+
+.default.dark {
+    color: white;
+    background-color: black;
+}
+
+.default.dark .section_title{
+    color: white;
+    font-size: 25px;
+}
+
+.section_provide {
+    display: flex;
+}
+
+.section_content {
+    border-right: 1px solid #333;
+    flex:1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section_content:first-child {
+    border-left: 1px solid #333;
+}
+
+.section_icon {
+    width: 60px;
+    height : 60px;
+    margin-bottom: 30px;
+}
+
+.section_icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.section_content h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    /* margin-bottom: 10px; */
+}
+
+.section_text span p {
+    margin-top: 8px;
+}
+
+.section_text p {
+    color: #9a9a9a;
+}
+
+.section_imagens {
+    margin: auto;
+}
+
+.section_imagens_filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #e9e6e6;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+    
+
+.section_imagens_filters ul {
+    display: flex;
+    list-style: none;
+
+    
+}
+
+.section_imagens_filters ul li:last-child{  
+    border-right: none;
+
+}
+
+
+.section_imagens_filters ul li{
+    /* border: 3px solid #e9e6e6; */
+    border-right: #ccc 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+
+}
+
+.section_imagens_filters ul li:hover,
+.section_imagens_filters ul li.active{
+    border-bottom: #b28756 3px solid;
+    
+ 
+}
+
+.section_imagens_photos {
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+
+
+
+
+
+
+/* Css de areas */ 
+
+.section_body {
+    display: flex;;
+}
+
+.section_about_left {
+    flex:1
+}
+
+.section_about_left p {
+    line-height: 25px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+.section_about_right {
+    width: 450px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section_about_right img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-projects--photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+ 
+
+.section-project--photoarea img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-project--photoarea {
+    width: 265px;
+    height: 160px;
+    margin: 10px;
+}
+
+.section--projects--photoinfo{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section--projects--photoinfo h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.section--projects--photoinfo p {
+    margin-top: -5px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.section-project--photoarea:hover {
+    .section--projects--photoinfo {
+        display: flex;
+    }
+    
+}
+
+ 
+
+.bg-team {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+
+
+.section_tem_area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section_team {
+    margin: auto;
+    max-width: 880px;
+    overflow: hidden;
+    
+}
+
+
+.section_team .sliders {
+    margin-left: 0px; /* Usado para fazer a movimentação dos slides */
+    margin-top: 50px;
+    height: 320px;
+    display: flex;
+}
+
+.section_team .sliders .slide {
+    margin-left: 20px;
+    display: flex;
+    min-width: 280px;
+    min-height: 320px;
+    background-color: white;
+}
+
+.section_team .sliders .slide:first-child{
+    margin-left: 0px;
+}
+
+
+.section_team .slidearea {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.section_team .sliders .slide_blue {
+    background-color: blue;
+}   
+
+
+
+
+.section_tem_area .sliders-pointers {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 20px;
+    display: flex;
+}
+
+.section_tem_area .sliders-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #b28756;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+
+}
+
+.section_tem_area .sliders-pointers .pointer.active {
+    background-color: #b28756;
+}
