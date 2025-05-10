@@ -551,3 +551,54 @@ main .banner {
 
 
 
+.clients .sliders-pointers {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 20px;
+    display: flex;
+}
+
+.clients .sliders-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #b28756;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+
+}
+
+.clients .sliders-pointers .pointer.active {
+    background-color: #b28756;
+}
+
+.clients .slide_social_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.clients .slide_social_description .icon img{
+    margin-bottom: 20px;
+}
+
+.section_clients .slide_name_description p{
+    font-size: 15px;
+    font-weight: 600;
+ 
+}
+
+.social_description p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #888888;
+    font-weight: 500;
+    line-height: 25px;
+}
+
